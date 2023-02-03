@@ -1,12 +1,12 @@
 import './main.scss';
 
-function Main() {
+function Main({name,job,maintenance,profil}) {
     return (
         <main>
-            <img src="https://avatars.githubusercontent.com/u/44211309?v=4" alt="Mathieu SIAUDEAU"/>
-            <h1>Mathieu SIAUDEAU</h1>
-            <h2>Développeur web & web mobile</h2>
-            <h3>Site actuellement en maintenance</h3>
+            <img src={profil} alt={name}/>
+            <h1>{name}</h1>
+            <h2>{job}</h2>
+            <h3>{maintenance}</h3>
         </main>
     )
 }
